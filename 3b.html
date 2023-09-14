@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/gallery.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -28,6 +29,26 @@
 					</header>
 
 				<!-- Menu -->
+
+				<div id="main" class="alt">
+
+					<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1><span style="color:#90AD57 ;">Canopee</span></h1>
+								
+								</header>
+								<p>The intent with this project was to bring my partner and mine's experience
+									 in living in the small city-village of Sakhnin, 
+								The idea was to bring the close communities of Sakhnin to 
+								the heart of Tel Aviv, thus creating a vertical village comprised of mini neighborhoods.<br><br>
+								</p>
+								
+						</span>
+							</div>
+						</section>
+
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
@@ -42,97 +63,21 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main" class="alt">
-
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1><span style="color:#90AD57 ;">Canopee</span></h1>
-										<h3>
-											<a href="https://migprize.com/laureates/2022-projects/">
-												<object data="/images/icons8-trophy-30.png" width="5%" height="5%"> </object> 2022 MIG Prize 2nd Place Winner</h3>
-											</a>
-									</header>
-									<p>It should come as no surprise that one of the world’s wealthiest cities would need a lot of resources.
-									And the fact that Dubai resides in the desert with no source of freshwater nearby means that water scarcity is a major
-									concern,
-									making H2O a hot commodity — both literally and figuratively.<br>
-									The city of 3.4 million residents receives around 15 million tourists, but only about 4 inches of rainfall, each year.
-									In order to support its own population and the booming tourism industry, Dubai needs to import a lot of goods.<br><br>
-									<strong>This is especially true for food and water.</strong><br><br>
-									Being in the desert with very little rainfall isn’t just a problem for obtaining water,
-									but without the vital resource, crops are hard to grow as well.<br>
-									In order to deal with these challenges, we implemented in our project algae tubes that span throughout the height of the
-									tower and integrates
-									with the architecture by creating a biological Mashrabia. The algae tubes are functional,
-									ecological and economical, thus making them a key part of our project.<br><br>
-									Moreover, harvesting the biomass created by the algae produces several byproducts such as:
-									biofuel, biodegradable plastic and even food supplements. These can sustain the building and its inhabitants and even
-									generate economical profit.
-									</p>
-									
-							</span>
-								</div>
-							</section>
-					</div>
-					<div class="center">
-						<embed src="images/4a1-merged.pdf" width="100%" height="1800px" />
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
+				<div class="inner">
+					  <div class="value-img">
+						<img src="images/3b/Picture2.png" />
+					  </div>
+				   
+						<div class="value-img">
+						  <img src="images/3b/Picture3.gif" />
 						</div>
-					</section>
 
+						<div class="value-img">
+						  <img src="images/3b/Picture3.gif" />
+				</div>
+				<!-- Main -->
+				
+				
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
@@ -159,6 +104,130 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<!-- Internal-->
+			<script>
+						/* eslint-disable */
+				var config = Zooming.config(),
+				TRANSITION_DURATION_DEFAULT = config.transitionDuration,
+				TRANSITION_DURATION_SLOW = 1.0,
+				TRANSITION_DURATION_FAST = 0.2,
+				BG_COLOR_DEFAULT = config.bgColor,
+				BG_COLOR_DARK = '#000',
+				ENABLE_GRAB_DEFAULT = config.enableGrab,
+				ACTIVE_CLASS = 'button-primary',
+				
+				btnFast = document.getElementById('btn-fast'),
+				btnSlow = document.getElementById('btn-slow'),
+				btnDark = document.getElementById('btn-dark'),
+				btnNoGrab = document.getElementById('btn-no-grab');
+				
+				function isActive(el) {
+				return el.classList.contains(ACTIVE_CLASS);
+				}
+				
+				function activate(el) {
+				el.classList.add(ACTIVE_CLASS);
+				}
+				
+				function deactivate(el) {
+				el.classList.remove(ACTIVE_CLASS);
+				}
+				
+				function fast() {
+				var t;
+				if (isActive(btnFast)) {
+					t = TRANSITION_DURATION_DEFAULT;
+					deactivate(btnFast);
+				} else {
+					t = TRANSITION_DURATION_FAST;
+					activate(btnFast);
+					deactivate(btnSlow);
+				}
+				
+				Zooming.config({ transitionDuration: t });
+				}
+				
+				function slow() {
+				var t;
+				if (isActive(btnSlow)) {
+					t = TRANSITION_DURATION_DEFAULT;
+					deactivate(btnSlow);
+				} else {
+					t = TRANSITION_DURATION_SLOW;
+					activate(btnSlow);
+					deactivate(btnFast);
+				}
+				
+				Zooming.config({ transitionDuration: t });
+				}
+				
+				function dark() {
+				var c;
+				if (isActive(btnDark)) {
+					c = BG_COLOR_DEFAULT;
+					deactivate(btnDark);
+				} else {
+					c = BG_COLOR_DARK;
+					activate(btnDark);
+				}
+				
+				Zooming.config({ bgColor: c });
+				}
+				
+				function noGrab() {
+				var enable;
+				if (isActive(btnNoGrab)) {
+					enable = ENABLE_GRAB_DEFAULT;
+					deactivate(btnNoGrab);
+				} else {
+					enable = !ENABLE_GRAB_DEFAULT;
+					activate(btnNoGrab);
+				}
+				
+				Zooming.config({ enableGrab: enable });
+				}
+			</script>
+
+			<style>
+				.container {
+					max-width: 600px;
+					}
+					
+					section.header {
+					margin-top: 4rem;
+					text-align: center;
+					}
+					
+					section.content {
+					text-align: center;
+					}
+					
+					.value-img {
+					display: block;
+					width: 50%;
+					height: 50%;
+					text-align: center;
+					margin: 2em 0;
+					}
+					
+					img {
+					max-width: 100%;
+					}
+					
+					@media (min-width: 550px) {
+					.header {
+						margin-top: 10rem;
+					}
+					}
+					
+					.button.button-primary {
+					background-color: #ce7338 !important;
+					border-color: #ce7338 !important;
+					}
+			</style>
+
+		<!-- Internal-->
 
 	</body>
 </html>
