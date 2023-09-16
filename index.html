@@ -5,13 +5,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-		<div class="loader">
-			<img src="images/preloader.gif" alt="">
-		</div>
+	<body class="content">
+	
+	<!-- Loader -->
+	<div class="loader">
+		<div></div>
+	</div>
 
+	<!-- Content -->
+	<div class="content">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -198,7 +203,7 @@
 					</footer>
 
 			</div>
-
+		</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -208,20 +213,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/app.js"></script>
-
 			<script>
-				
-				window.addEventListener("load", () => {
-				const loader = document.querySelector(".loader");
-
-				loader.classList.add("loader--hidden");
-
-				loader.addEventListener("transitionend", () => {
-					document.body.removeChild(loader);
-					});
-				});
-
-
+				$(window).on('load', function(){
+					$(".loader").fadeOut(1000);
+					$(".content").fadeIn(1000);
+				})
 			</script>
 
 	</body>
